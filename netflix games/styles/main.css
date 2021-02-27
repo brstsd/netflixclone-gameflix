@@ -1,0 +1,121 @@
+:root{
+    --branco: rgb(255, 255, 255);
+    --preta:#141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body{
+    background: var(--preta);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+}
+
+header .logo{
+    color: var(--branco);
+    font-family: 'Concert One', cursive;
+    margin-left: 5px;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: .4s ease all;
+}
+
+header nav a:hover{ /*quando o mouse está por cima - mouseover*/
+    background-color: white;
+    color: black;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 80px;
+}
+
+/*filme principal*/
+
+.jogoprincipal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/netflix/netflix\ games/img/tlou.jpg');
+    
+    height: 700px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.jogoprincipal .descricao {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    text-align: justify;
+}
+
+.jogoprincipal .titulo{
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS';
+}
+
+.botao{
+    background-color:rgba(0, 0, 0, 50%);
+    border: none;
+    color: white;
+
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor:pointer;
+    transition: .4s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+}
+
+.botao i{
+    margin-right: 6px;
+}
+
+/*WRAPPER = ENVELOPAR*/
+
+.container{
+    margin-left: 30px;
+}
+
+.jogoprincipal .container{
+    width: 70%;
+    padding-bottom: 50px;
+}
+
+.boxjogo{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carroseljogos{
+    margin-top: 5px;
+}
